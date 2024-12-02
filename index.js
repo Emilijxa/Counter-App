@@ -8,6 +8,18 @@
 
 // console.log(count)
 
+let countEl = document.getElementById("count-el")
+
+
+count = 0
+
 function increment() {
-    console.log("Button was clicked")
+    count = count + 1
+    countEl.innerText = count
+}
+
+document.getElementById("count-el").innerText = count
+
+function save() {
+    console.log(count)
 }
